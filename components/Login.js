@@ -61,7 +61,7 @@ const Login = () => {
                     {
                         isError && <small className='text-red text-sm'>{isError}</small>
                     }
-                    <p className='text-sm text-white'>Don't Have An Account? <span className='text-neutral-800 cursor-pointer'>Create A New</span> </p>
+                    <p className='text-sm text-white'>Do not Have An Account? <span className='text-neutral-800 cursor-pointer'>Create A New</span> </p>
                 </form>
             </div>
         </div>

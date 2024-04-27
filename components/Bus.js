@@ -27,7 +27,7 @@ const Bus = ({ _id, busName, busSeat, from, stopes }) => {
                     <div className='w-[250px] border-1 max-h-32 overflow-y-auto'>
                         {
                             stopes.map(item => (
-                                <div className='flex justify-between items-center text-sm'>
+                                <div key={item.distinaion} className='flex justify-between items-center text-sm'>
                                     <h3 className=''>{item.distinaion}</h3>
                                     <p>{item.time}</p>
 
