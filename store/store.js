@@ -21,9 +21,9 @@ const busSeatModal = {
 }
 
 const busId = {
-   busId:'',
+   id:'',
     getBusId : action((state,id)=>{
-        state.busId=id
+        state.id=id
     })
 }
 

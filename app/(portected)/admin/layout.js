@@ -9,7 +9,7 @@ const AdminLayout = async({ children }) => {
             <div className="min-w-[300px]">
             <SideBar user={session.user} />
             </div>
-            <div className="w-full h-full flex flex-col bg-green-400">
+            <div className="w-full h-full flex flex-col bg-green-400 overflow-hidden">
                 <Greeding/>
                 {children}
             </div>

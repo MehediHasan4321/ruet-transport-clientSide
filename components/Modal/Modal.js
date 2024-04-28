@@ -17,7 +17,7 @@ const Modal = ({ isOpen, onClose, children, description, title, handleChange }) 
                     <Dialog.Description className='mb-5 text-sm leading-normal text-center text-white'>
                         {description}
                     </Dialog.Description>
-                    <div className=''>
+                    <div className='w-full flex justify-center'>
                         {children}
                     </div>
                     <Dialog.Close asChild>
