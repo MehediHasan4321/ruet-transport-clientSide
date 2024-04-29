@@ -43,7 +43,7 @@ const AddBusForm = ({ handleBusInfo }) => {
         }else{
             return twoByTwoSeat
         }
-    },[formValue.seatPattan])
+    },[])
 
 
     const totalSeat = handleSeats(formValue.seatPattan)
