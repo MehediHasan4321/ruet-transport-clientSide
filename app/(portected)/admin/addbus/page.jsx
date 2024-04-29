@@ -3,7 +3,6 @@ import { addBus } from '@/action/addBus';
 import AddBusForm from '@/components/admin/AddBusForm';
 import SeatPattan from '@/components/SeatPattan';
 import { Button } from '@/components/ui/button';
-import { twoByTwoSeat,oneByOneSeat } from '@/src/constants';
 import React, { useState } from 'react';
 
 
@@ -13,17 +12,14 @@ const AddBus = () => {
         busName: '',
         busStopes: [],
         isAc: false,
-        totalSeat: 0,
         seatPattan: 'two by two',
         busSeat: [],
-        createdAt:new Date(),
-        updatedAt:new Date()
+        
     }
     const [busInfo, setBusInfo] = useState({ ...init })
     
     const handleBusInfo = info => {
         setBusInfo(info)
-        console.log(info)
 
     }
 
@@ -53,7 +49,7 @@ const AddBus = () => {
                 <AddBusForm handleBusInfo={handleBusInfo} />
             </div>
             <div className='flex flex-col gap-y-2'>
-                <SeatPattan direction={busInfo.seatPattan} seats={busInfo.busSeat} />
+                <SeatPattan direction={busInfo.seatPattan} seats={busInfo?.busSeat} />
                 <Button onClick={handlePublish} variant='custom'>{isLoading?'Publishing....':'Publish'}</Button>
             </div>
         </div>
