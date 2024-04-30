@@ -5,12 +5,12 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 
 
-const HomeWraper = ({ children }) => {
+const HomeWraper = ({ children,session }) => {
 
     return (
         <div>
             <header>
-                <Navbar />
+                <Navbar session={session} />
             </header>
             <main className="mb-20">
                 {children}
