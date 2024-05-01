@@ -9,7 +9,21 @@ npm install
 # or
 npm i
 ```
+After installing add dependency create a .env file in the root of the project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```javascript
+    AUTH_SECRET= 'enter a secret '
+    MONGODB_URI= 'provide your mongoDB URI'
+
+```
+
+After Createing .env file and privede all info. To run the code in locally just follow the command
+
+```bash
+npm run dev
+```
+
+
+Then it will Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 
