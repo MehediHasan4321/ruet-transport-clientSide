@@ -4,10 +4,9 @@ import React from 'react';
 import { Button } from '../ui/button';
 
 const AllBooking = ({ bookings = [] }) => {
-    console.log(bookings)
+    
     return (
-        <div className=' overflow-y-auto'>
-            <table class=" table-fixed w-full text-sm text-left rtl:text-right">
+        <table class=" table-fixed w-full text-sm text-left rtl:text-right overflow-y-auto">
                 <thead class="text-xs text-white uppercase bg-green-400">
                     <tr>
                     <th scope="col" className="px-6 py-3">
@@ -48,11 +47,10 @@ const AllBooking = ({ bookings = [] }) => {
                     }
                 </tbody>
             </table>
-        </div>
     );
 };
 
-const TableRow = ({ BusName, status,user, seat }) => {
+const TableRow = ({ busName,seatName, status,user, }) => {
     const {name, phone, distination,} = user || {}
 
     return (
@@ -61,10 +59,10 @@ const TableRow = ({ BusName, status,user, seat }) => {
                 {'001'}
             </th>
             <td className="px-6 py-4 ">
-                {BusName}
+                {busName}
             </td>
             <td className="px-6 py-4 ">
-                {seat}
+                {seatName}
             </td>
             <td className="px-6 py-4 ">
                 {name}

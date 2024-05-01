@@ -1,12 +1,12 @@
 'use client'
 import { useQuery } from '@tanstack/react-query';
-import getSeatsByBusId from '@/action/getSeatsByBusId';
 import SeatPattan from './SeatPattan';
 import { Input } from './ui/input';
 import { useState } from 'react';
 import { Button } from './ui/button';
-import addBooking from '@/action/addBooking';
-import addToBookingTable from '@/action/addToBookingTable';
+import getSeatsByBusId from '@/action/getSeatsByBusId';
+import { addBooking, addToBookingTable } from '@/action/booking';
+
 
 const BusSeat = ({ busId }) => {
     const initValue = {
@@ -63,6 +63,8 @@ const BusSeat = ({ busId }) => {
         const bookingTable = {
             busId,
             seatId,
+            seatName,
+            busName:data?.busName,
             user: {
                 name,
                 phone,
