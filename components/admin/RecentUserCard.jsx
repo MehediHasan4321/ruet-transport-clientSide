@@ -10,7 +10,7 @@ const RecentUserCard = ({ name, email, role, avater }) => {
                     {name}
                 </h3>
                 <h3 className='text-sm'>{email}</h3>
-                <div className='text-[12px] bg-green-500 text-white rounded-md px-2'>{role}</div>
+                <span className='text-[12px] bg-green-500 text-white rounded-md px-2'>{role}</span>
             </div>
         </div>
     );

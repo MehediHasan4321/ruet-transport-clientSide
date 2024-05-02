@@ -21,8 +21,6 @@ export default {
 
                         return user
                     }
-
-
                 }
                 return null
             }

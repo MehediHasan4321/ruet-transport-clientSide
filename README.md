@@ -9,11 +9,11 @@ npm install
 # or
 npm i
 ```
-After installing add dependency create a .env file in the root of the project
+After installing all dependency create a .env file in the root of the project
 
 ```javascript
     AUTH_SECRET= 'enter a secret '
-    MONGODB_URI= 'provide your mongoDB URI'
+    MONGODB_URI= 'provide your mongoDB URI '
 
 ```
 

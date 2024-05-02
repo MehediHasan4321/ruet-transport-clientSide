@@ -12,7 +12,7 @@ const HomeWraper = ({ children,session }) => {
             <header>
                 <Navbar session={session} />
             </header>
-            <main className="mb-20">
+            <main>
                 {children}
             </main>
             <footer>
